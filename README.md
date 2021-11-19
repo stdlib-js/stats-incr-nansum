@@ -20,7 +20,7 @@ limitations under the License.
 
 # incrnansum
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Compute a sum incrementally, ignoring `NaN` values.
 
@@ -152,8 +152,8 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/nansumabs`][@stdlib/stats/incr/nansumabs]: compute a sum of absolute values incrementally, ignoring NaN values.
--   [`@stdlib/stats/incr/sum`][@stdlib/stats/incr/sum]: compute a sum incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/nansumabs`][@stdlib/stats/incr/nansumabs]</span><span class="delimiter">: </span><span class="description">compute a sum of absolute values incrementally, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/sum`][@stdlib/stats/incr/sum]</span><span class="delimiter">: </span><span class="description">compute a sum incrementally.</span>
 
 </section>
 
@@ -204,8 +204,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-incr-nansum/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-incr-nansum?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/stats-incr-nansum.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/stats-incr-nansum/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
