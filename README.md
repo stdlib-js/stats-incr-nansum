@@ -41,30 +41,38 @@ The sum is defined as
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/stats-incr-nansum
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var incrnansum = require( '@stdlib/stats-incr-nansum' );
+incrnansum = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nansum@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var incrnansum = require( 'path/to/vendor/umd/stats-incr-nansum/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nansum@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.incrnansum;
+})();
+</script>
 ```
 
 #### incrnansum()
@@ -119,9 +127,14 @@ sum = accumulator();
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var incrnansum = require( '@stdlib/stats-incr-nansum' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nansum@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var accumulator;
 var v;
@@ -140,6 +153,11 @@ for ( i = 0; i < 100; i++ ) {
     accumulator( v );
 }
 console.log( accumulator() );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -238,9 +256,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/nansumabs]: https://github.com/stdlib-js/stats-incr-nansumabs
+[@stdlib/stats/incr/nansumabs]: https://github.com/stdlib-js/stats-incr-nansumabs/tree/umd
 
-[@stdlib/stats/incr/sum]: https://github.com/stdlib-js/stats-incr-sum
+[@stdlib/stats/incr/sum]: https://github.com/stdlib-js/stats-incr-sum/tree/umd
 
 <!-- </related-links> -->
 
