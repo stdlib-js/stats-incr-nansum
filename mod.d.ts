@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2020 The Stdlib Authors.
@@ -16,39 +16,47 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
 /**
-* Compute a sum incrementally, ignoring `NaN` values.
+* If provided a value, returns an updated sum; otherwise, returns the current sum.
 *
-* @module @stdlib/stats-incr-nansum
+* @param x - value
+* @returns sum
+*/
+type accumulator = ( x?: number ) => number | null;
+
+/**
+* Returns an accumulator function which incrementally computes a sum, ignoring `NaN` values.
+*
+* @returns accumulator function
 *
 * @example
-* var incrnansum = require( '@stdlib/stats-incr-nansum' );
-*
 * var accumulator = incrnansum();
 *
-* var sum = accumulator();
+* var v = accumulator();
 * // returns null
 *
-* sum = accumulator( 2.0 );
+* v = accumulator( 2.0 );
 * // returns 2.0
 *
-* sum = accumulator( NaN );
-* // returns 2.0
+* v = accumulator( 3.0 );
+* // returns 5.0
 *
-* sum = accumulator( -5.0 );
-* // returns -3.0
+* v = accumulator( NaN );
+* // returns 5.0
 *
-* sum = accumulator();
-* // returns -3.0
+* v = accumulator( 4.0 );
+* // returns 9.0
+*
+* v = accumulator();
+* // returns 9.0
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function incrnansum(): accumulator;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = incrnansum;
