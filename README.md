@@ -63,7 +63,7 @@ s = \sum_{i=0}^{n-1} x_i
 ## Usage
 
 ```javascript
-import incrnansum from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nansum@deno/mod.js';
+import incrnansum from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nansum@v0.1.1-deno/mod.js';
 ```
 
 #### incrnansum()
@@ -120,7 +120,7 @@ sum = accumulator();
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import incrnansum from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nansum@deno/mod.js';
+import incrnansum from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nansum@v0.1.1-deno/mod.js';
 
 var accumulator;
 var v;
