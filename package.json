@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-incr-nansum",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Compute a sum incrementally, ignoring NaN values.",
   "license": "Apache-2.0",
   "author": {
@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@stdlib/math-base-assert-is-nan": "^0.2.2",
-    "@stdlib/stats-incr-sum": "^0.2.2",
+    "@stdlib/stats-incr-sum": "^0.2.3",
     "@stdlib/types": "^0.4.3"
   },
   "devDependencies": {
